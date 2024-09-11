@@ -44,8 +44,10 @@ padding: 4px;
                 <center><img src="/img/profile.jpg" width="160" height="160">
                 <a href="https://www.imood.com/users/kam106"><img src="https://moods.imood.com/display/uname-kam106/fg-FFFFFF/bg-330066/trans-1/imood.gif" alt="The current mood of kam106 at www.imood.com" border="0"></a><br>
                 <a href="https://nomnomnami.itch.io/kaima" alt="this link goes to the og source">Icon</a> drawn by <a href="https://nomnomnami.com/" alt="this is one of nami's favorite drawings of vido apparently, win?">nami</a></center><br>
-
-                <br><br>
+                <center>
+                My time:<br>
+                <b class="clock" timezone="-3">12:00</b>
+                <br><br></center>
                     <!-- old implimentation 
                     <div class="box">
                         <p>(09/09/24)</p>
@@ -63,8 +65,9 @@ padding: 4px;
 					<p><u><b>(09.10.24)</b></u></p>
 					- <a href="https://github.com/bcomnes/deploy-to-neocities">Implement Deploy-to-Neocities for a better editing experience</a><br>
                     - Better local image organization<br>
-                    - Added some new buttons
-                    - Added a last played widget <a href="https://dogspit.nekoweb.org/home.html">courtesy of Dogspit!</a>
+                    - Added some new buttons<br>
+                    - Added a last played widget <a href="https://dogspit.nekoweb.org/home.html">courtesy of Dogspit!</a><br>
+                    - Added current time <a href="https://dogspit.nekoweb.org/home.html">based on Dogspit's implementation</a>
                     <p><u><b>(09.09.24)</b></u></p>
                     - Moved around some elements<br>
                     - Added Status Cafe widget<br>
@@ -535,5 +538,43 @@ document.getElementById("listening").innerHTML = `
 
 getTrack();
 setInterval(() => { getTrack(); }, 10000);
+    </script>
+    <script>
+         
+function dateToText(date) {
+    var hours = date.getHours()
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (minutes < 10) minutes = '0'+minutes;
+    if (seconds < 10) seconds = '0'+seconds;
+    if (hours < 10) hours = '0'+hours;
+    return hours + ":" + minutes; // + ":" + seconds;
+}
+function updateClocks() {
+	for (var i = 0; i < window.arrClocks.length; i++) {
+		var clock = window.arrClocks[i];
+		var offset = window.arrOffsets[i];
+		clock.innerHTML = dateToText(new Date(new Date().getTime()+offset));
+	}
+}
+function startClocks() {
+	clockElements = document.getElementsByClassName('clock');
+	window.arrClocks = []
+	window.arrOffsets = [];
+	var j = 0;
+	for(var i = 0; i < clockElements.length; i++) {
+		el = clockElements[i];
+		timezone = parseInt(el.getAttribute('timezone'));
+		if (!isNaN(timezone)) {
+			var tzDifference = timezone * 60 + (new Date()).getTimezoneOffset();
+			var offset = tzDifference * 60 * 1000;
+			window.arrClocks.push(el);
+			window.arrOffsets.push(offset);
+		}
+	}
+	updateClocks();
+	clockID = setInterval(updateClocks, 1000);
+}
+setTimeout(startClocks, 100);
     </script>
 </body>
