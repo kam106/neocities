@@ -1,12 +1,194 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+/* these are the main colors and header image
+   replace them with anything you want! */
+:root {
+    --header-bg: url('images/header.png');
+    --accent-color: #FF3183;
+    --link-color: #FF3183;
+    --bg-color: #FFFFFF;
+    --bg-color2: #000000;
+    --text-color: #8213AB;
+    --favorite-color: #FFA6CB;
+    /* these are semi-transparent! 8-digit hex codes add alpha :) */
+    --lighter-color: #ffffff4d;
+    --darker-color: #00000080;
+}
+/* you can get hex codes from sites like this:
+   https://palettes.shecodes.io/
+   i just looked up "css color templates" to find that link! */
+
+/* this applies to all the content */
+* {
+    color: var(--text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* this is for when you select text on the page */
+::selection {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
 
 body {
-  background-color: black;
-  color: white;
-  font-family: Verdana;
+    background-color: var(--bg-color2);
+    margin: 0;
 }
+/* i think having better line spacing helps text to be more readable, but you can remove it if you want */
+p {line-height: 1.5em;}
+
+header {
+    background-color: var(--accent-color);
+/* you can add the image url in :root (at the top) if you want */
+    background: var(--header-bg);
+    background-size: 100%;
+    background-position: center;
+/* change the minimum height if you want it to take up more/less space */
+    min-height: 200px;
+}
+
+/* this is your site title displayed at the top of the page */
+header > h1 {
+    margin: auto;
+    max-width: 960px;
+    padding: 50px;
+/* you can change the text-align to center or right if you want it placed differently */
+    text-align: left;
+    color: var(--bg-color);
+    text-shadow: var(--text-color) 3px 3px;
+}
+
+nav {
+    background-color: var(--favorite-color);
+    padding: 1em;
+    font-weight: bold;
+}
+
+nav > ul {
+    max-width: 960px;
+    margin: auto;
+    line-height: 3rem;
+/* this stuff makes it wrap around on mobile */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+/* this line takes away the dot in front of the list items */
+    list-style-type: none;
+/* list items have default padding but we don't need it for these */
+    padding-left: 0;
+/* and this spaces out the buttons so they're not touching */
+    justify-content: space-evenly;
+}
+nav li > a {
+    background-color: var(--bg-color);
+    box-shadow: var(--accent-color) 4px 4px;
+    padding: .5em 3em;
+/* this takes away the link underline */
+    text-decoration: none;
+}
+nav li > a:hover {
+    box-shadow: var(--text-color) 4px 4px;
+}
+
 a {
-  color: hotpink
+    color: var(--link-color);
+}
+a:visited {
+    color: var(--text-color);
+}
+a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* you can change this to lots of things, i picked square cuz it's like a pixel */
+ul { list-style-type: square; }
+
+#sidebar {
+    background-color: var(--favorite-color);
+/* if you don't like the borders you can remove them or change the size haha */
+    border-left: 2em solid var(--text-color);
+    border-right: 12px solid var(--accent-color);
+    min-width: 220px;
+}
+
+#avatar {
+    margin: .5em auto;
+    box-shadow: var(--accent-color) 4px 4px;
+/* image size is 160px so i made its container a little bigger to fit the borders */
+    max-width: 164px;
+    max-height: 164px;
+}
+#avatar img {
+    background: var(--lighter-color);
+    max-width: 160px;
+    border: 2px dashed var(--accent-color);
+}
+
+#bio {
+    font-size: smaller;
+    margin: 1em;
+    background: var(--lighter-color);
+    border: 2px dashed var(--accent-color);
+    box-shadow: var(--accent-color) 4px 4px;
+}
+#bio p { margin: 1em; }
+
+#content {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    background-color: var(--bg-color);
+    padding: 2em;
+    border-right: 2em solid var(--text-color);
+}
+
+main > h1,
+main > h2,
+main > h3 {
+    border-bottom: 2px dashed var(--accent-color);
+    text-shadow: var(--favorite-color) 2px 2px;
+}
+
+/* made this a class so i can change it to be centered on mobile */
+.img-right { float: right; }
+
+footer {
+    background-color: var(--favorite-color);
+    text-align: center;
+    font-size: small;
+    padding: 1em;
+}
+
+/* these are the mobile styles! */
+@media only screen and (max-width: 800px) {
+    #content {
+        flex-wrap: wrap;
+    }
+    #sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    #avatar {margin: 0 1em;}
+    #bio {width: 50%;}
+    #sidebar ul {   
+        margin: 0 1em;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 2em;
+    }
+    #sidebar li {
+        padding-left: 0;
+        margin: .3em 1em;
+    }
+/* uncomment this line if you want no borders on the main content */
+    /*main {border: none;}*/
+    .img-right {
+        float: none;
+        text-align: center;
+    }
 }

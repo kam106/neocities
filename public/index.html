@@ -1,595 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is a neocities default so maybe let's not fuck with this -->
-    <meta name="description" content="Kameron's fourth iteration of a personal site.">
-    <link rel="shortcut icon" href="/pic/profile.jpg" type="image/x-icon"> 
-    <title>kam106's World</title>
-    <!-- link href="/style.css" rel="stylesheet" type="text/css" media="all" ; This was needed for site colors on the original site, however, we are no longer using that version. This line will remain for future reference though -->
-  </head>
-<body>
-<!-- scrollbox code up here for easy access
--->
-<style>
-#scrollbox {
-width: 180px;
-height: 250px;
-border: 2px dashed #737373;
-overflow: auto;
-padding: 4px;
-}
-</style>
-<!--
-        <div id="container"><div id="header" style="height: 148px;"></div>
-            <div id="headerArea">
--->
-        <div id="container">
-            <div id="headerArea">
-                <nav id="navbar" style="margin-bottom: 0px;">
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About Me/Links</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/demos.html">Music Demos</a></li>
-                        <li><a href="/quotes.html">Quotes</a></li>
-                        <li><a href="/redeye.html">Lyrics</a></li>
-                        <li><a href="https://kam106.atabook.org/">My Guestbook</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id="flex">
-                <aside id="leftSidebar" style="margin-right: 0px;">
-                <center><img src="/img/profile.jpg" width="160" height="160">
-                <a href="https://www.imood.com/users/kam106"><img src="https://moods.imood.com/display/uname-kam106/fg-FFFFFF/bg-330066/trans-1/imood.gif" alt="The current mood of kam106 at www.imood.com" border="0"></a><br>
-                <a href="https://nomnomnami.itch.io/kaima" alt="this link goes to the og source">Icon</a> drawn by <a href="https://nomnomnami.com/" alt="this is one of nami's favorite drawings of vido apparently, win?">nami</a></center><br>
-                <center>
-                My time:<br>
-                <b class="clock" timezone="-3">12:00</b>
-                <br><br></center>
-                    <!-- old implimentation 
-                    <div class="box">
-                        <p>(09/09/24)</p>
-                        <ul style="padding-left:8px;">
-                            <li>Moved around some elements</li>
-                            <li>Added Status Cafe widget</li>
-                            <li>Replaced WebAmp music demos page with a more friendlier one due to non-practibility</li>
-                            <li>Split buttons across both sidebars</li>
-                            <li>Added more blog post archives</li>
-                        </ul>
-                    </div>
-                    -->
-                    <div id="scrollbox">
-                    Changelog!<br>
-                    <p><u><b>(09.12.24)</b></u></p>
-                    - Fixed scrollbox width<br>
-                    - Added note to Last Played<br>
-                    - Added pending buttons<br>
-					<p><u><b>(09.10.24)</b></u></p>
-					- <a href="https://github.com/bcomnes/deploy-to-neocities">Implement Deploy-to-Neocities for a better editing experience</a><br>
-                    - Better local image organization<br>
-                    - Added some new buttons<br>
-                    - Added a last played widget <a href="https://dogspit.nekoweb.org/home.html">courtesy of Dogspit!</a><br>
-                    - Added current time <a href="https://dogspit.nekoweb.org/home.html">based on Dogspit's implementation</a>
-                    <p><u><b>(09.09.24)</b></u></p>
-                    - Moved around some elements<br>
-                    - Added Status Cafe widget<br>
-                    - Replaced WebAmp music demos page with a more friendlier one due to non-practibility<br>
-                    - Split buttons across both sidebars<br>
-                    - Added more blog post archives<br>
-                    - Added rough RSS feed to blog<br>
-                    <p><u><b>Prior to 09.09.24</b></u></p>
-                     - Site rework!<br>
-                     - Carried over some assets from my SpaceHey profile<br>
-                     Opted for two sidebars unlike old site design<br>
-                     - Blog section added, with archived blogs!<br>
-                     - More additions!<br>
-                     - Added Visitor Count<br>
-                     - Added update tracker<br>
-                     - Nomnomnami credit for icon + KAIMA game link (oops forgot to add it)<br>
-                    </div>
-                    <center>
-                    <h2>Site button</h2>
-                    <img src="/button/buttonk.png"><textarea class="copyButton" style="width: 160px; height: 125px;"><a href="https://kam106.neocities.org/" target="_blank"><img src="https://kam106.neocities.org/button/buttonk.png"></a></textarea>
-                    </center>
-                    <h2>More Buttons</h2>
-                    <a href="https://catbyte.site/" target="_blank"><img src="https://catbyte.site/buttons/catbytebutton.png"/></a>
-                    <a href="https://spacehey.com/profile?id=2577419"><img src="/button/ls.png"></a>
-                    <img src="/button/button.png">
-                    <img src="/button/2020SUCKS.png">
-                    <img src="/button/piracy.gif">
-                    <a href="https://auberylis.moe/"><img src="/button/auberylismoe.png"></a>
-                    <img src="/button/buttonk.png">
-                    <a href="https://spacehey.com/kamrager106"><img src="https://i.ibb.co/dGygvvp/e8.jpg"></a>
-                    <a href="https://nomnomnami.com"><img src="https://nomnomnami.com/images/site_button.gif"></a>
-                    <a href="https://squidbeak.neocities.org" target="_blank"><img src="https://squidbeak.neocities.org/squidbeak.png"></a>
-                    <!-- art from guchiri's abnormality dancin' girl; it's a great song! --> <a href="https://ultrakill.nekoweb.org"> <img src="https://ultrakill.nekoweb.org/ultrakillinmene.png" title="ultrakill on nekoweb" alt="a person with purple hair sits beside white text saying 'ultrakill'"> </a>
-                    <a href="https://skewbug.neocities.org/"><img src="https://skewbug.neocities.org/images/siteButton.gif"></a>
-                    <img src="/button/buttonHalfLife.gif">
-                    <a href="https://archive.org"><img src="/button/buttonInternetArchive.gif"></a>
-                    <img src="/button/buttonPirateAAA.gif">
-                    <img src="/button/buttonCD.png">
-                    <img src="/button/parental.gif">
-                    <img src="/button/buttonGBA.png">
-                    <img src="/button/piracy.gif">
-                    <!--
-                    <h2>Hi there!</h2>
-                    <h3>Other Tools</h3>
-                    <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
-                    </ul>
-                    -->
-                </aside>
-                <main>
-                    <h1>Kameron's World</h1>
-                    <p>Best viewed on desktop with a decently sized screen! (~1080p)</p>
-                    <p>Recommended with content blockers (i.e: uBO Advanced Filtering) OFF and JavaScript ON. No worries, there's no ads :)</p>
-                    <p><strong>Ahem.</strong></p>
-                    <p>Hi. I'm Kam, and I run a Neocities page as a hobby, because I don't know anything about code but felt like picking it up anyway. I've always been fascinated by the site of having my own website page, playing a lot with copy pasted stuff around 2020, but around 2023, I decided to stop and take my own take at an actual site from scratch. I sat over that idea for the past year, and here we are. An idiot who shares a birthday with Ty Dolla $ign has their own site. While this site isn't the best thing ever made, and it's pretty rough around the edges, I still made something passable, and it's good enough.</p>
-                    <p>Disclaimer about buttons, I may or may not be fully aware of the content on the sites of the buttons I add. While they are not explicit, I do add various site buttons for sites both cringy and splendid, you should take anything I add with a grain of salt and assume it was just a site I found if I haven't mentioned it before.</p>
-                    <p>Yeah, I know, a lot of this site is a huge work in progress, and I'm very sorry about not much of it being done. You're free to leave some feedback <a href="https://kam106.atabook.org/">on my guestbook</a>, or you can also <a href="https://resite.link/kam106">reach out through a link on my resite</a> if this is a little more personal.</p>
-
-                    <p>Basically, excuse the rough code, sign my guestbook and check out my accounts. Also, a long to-do list.</p>
-                    <p>If this page is a little intense for you to look at, you could always try the older version of this page, where it's just plain text!</p>
-                    <p>Now to find some more of my notes...</p>
-                </main>
-                <aside id="rightSidebar" style="margin-left: 0px;">
-                Last played:
-                <br><br>
-                <div id="listening"><noscript>You need Javascript to see this.</noscript></div>
-                <small>You may not see anything above, this is a known thing! Try again later!</small><br>
-                <br><a href="https://kam106.atabook.org/"><img src="https://i.postimg.cc/jSB8jTtF/sign-guestbook1.gif"></a>
-                <h2>Status</h2>
-                You are visitor # <span id="hitcount"></span><br>
-                Last Updated: <span id="lastupdate"></span><br>
-                Background and layout provided by <a href="https://goblin-heart.net/sadgrl/">Sadgurl</a><br><br>
-                <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script>
-                <!-- old status sytem
-                <a href="https://status.cafe/users/kam106"><img src="https://status.cafe/users/kam106/badge.png" alt="Status Cafe Profile"/></a>
-                -->
-                <h2>Links</h2>
-                <b><a href="https://neocities.org/site/kam106">Neocities Site Profile</a></b><br><br>
-                <b><a href="https://resite.link/kam106">Other Links</a></b>
-                <br><br>
-                <!-- Old implimentation
-                    <h2>To-Do</h2>
-                    <div class="box">
-                        <p>Mostly just chores now.</p>
-                        <ul style="padding-left:8px;">
-                            <li>Add tumblr demos to the music demos page</li>
-                            <li>Unhotlink some buttons</li>
-                            <li>Sitemap</li>
-                            <li>Replace updates box with proper log (do research on other pages)</li>
-                            <li>Consider replacing blog with <a href="https://journal.miso.town/">HTML Journal</a> for Atom feed. Or, maybe try <a href="https://smol.pub">Smol Pub?</a></li>
-                            <li><a href="https://github.com/bcomnes/deploy-to-neocities">Github Neocities.</a> Because it's a reason to open source the site.<li>
-                        </ul>
-                    </div><br>
-                    -->
-                    <p>If you'd like to see what needs to be done, check out <a href="https://github.com/kam106/neocities/milestone/1">this site's GitHub page!</a></p>
-                    <h2>Buttons</h2>
-                    <p><a href="https://lucida.to"><img src="https://lucida.to/buttons/88x31.gif"/></a>
-                    <a href="http://toastytech.com/index.html"><img src="/button/fuckie.gif"/></a>
-                    <a href="https://rentry.co/kshslskasset1"><img alt="add me: kam106" src="https://cyber.dabamos.de/88x31/soulseek.gif"/></a>
-                    <a href="https://steamcommunity.com/id/harsherpiano/"><img src="https://cyber.dabamos.de/88x31/steam.gif"/></a>
-                    <img src="https://cyber.dabamos.de/88x31/xp.gif"/>
-                    <img src="https://pilosophos.github.io/88x31-viewer/buttons/cyber.dabamos.de/firefox3.gif"/>
-                    <a href="https://www.tumblr.com/subtlymelancholy/755643969279574016/i-made-these-as-placeholder-images-for-my-site-and"><img src="https://files.catbox.moe/1jsc8p.jpg"/></a>
-                    <a href="https://spacehey.com/snowgrave"><img src="https://i.postimg.cc/13KWvS5V/button.gif"/></a>
-                    <a href="https://scripted.neocities.org" target="_blank"><img src="https://scripted.neocities.org/SCRIPTED-BUTTON.gif" title="sources & codes to beautify your website!"/></a>
-                    <a href="https://daniele63.com"><img src="https://daniele63.com/images/danieles_button_alt_2.jpg"/></a>
-                    <a href="https://neocities.org"><img src="https://daniele63.com/images/buttons/neocitiescat.png"/></a>
-                    <img src="https://daniele63.com/images/buttons/minecraft.gif"/>
-                    <img src="https://daniele63.com/images/buttons/CapeCanaveral_Cockpit_7440_walisten.gif"/>
-                    <a href="https://gifypet.neocities.org/"><img src="https://gifypet.neocities.org/images/badge.gif"/></a>
-                    <img src="https://pizzacatdelights.neocities.org/images/buttons/ublock_now.png"/>
-                    <a href="https://midnightsolarium.neocities.org"><img src="https://midnightsolarium.neocities.org/img/misobuttons/misobutton.gif"/></a>
-                    <a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button.png"/></a>
-                    <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"/></a>
-                    <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
-                    <a href="https://chromaeleon.neocities.org" target="_blank"><img src="https://file.garden/ZswKDahgIRcOzee-/ART/Chromaeleon-Button.gif" style="image-rendering: pixelated;" alt="CHROMAELEON"></a>
-                    <a href="https://liminalmind.neocities.org/"><img src="https://liminalmind.neocities.org/button.png"></a>
-                    <a href="https://dshifter.neocities.org/"><img src="/button/DShiftersPlaceOmega88x31.png"></a>
-                    <img src="/button/button3DS.png">
-                    <a href="https://dogspit.nekoweb.org/"><img src="/button/0pnWFCL.png"></a>
-                    </p>
-                <!--
-                    <h2>Hi there!</h2>
-                    <h3>Other Tools</h3>
-                    <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
-                    </ul>
-                    -->
-                </aside>
-            </div>
-            
-        <footer id="footer" style="margin-top: 0px;"><small><b>Copyright &#169; 2024 kam106. Most of the music I make is licensed under CC BY 4.0. To view a copy of this license, <a href="https://creativecommons.org/licenses/by/4.0/">visit here.</a></b></small></footer></div>
-        <!-- THIS IS THE CSS !-->
-        <style>
-            /* user styles */
-
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
-/* original header image: https://sadhost.neocities.org/images/layouts/wp.jpeg */
-            :root {
-                --header-image: url('');
-                --body-bg-image: url('https://kam106.neocities.org/img/4.gif');
-
-                /* colors (for what?) */
-                --content: #43256E;
-            }
-
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
-    
-    */
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-                font-weight: bold;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-                font-style: italic;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-                font-style: italic;
-                font-weight: bold;
-            }
-
-            body {
-                font-family: 'Nunito', sans-serif;
-                margin: 0;
-                /* below is set to white just in case the blue bg doesn't load, it looks fine i think */
-                background-color: #000000;
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #F1F2EB;
-                background-image: var(--body-bg-image);
-            }
-/* color og fceaff */
-            * {
-                box-sizing: border-box;
-            }
-
-            /* below this line is CSS for the layout */
-
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-            #container {
-                max-width: 1000px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
-                margin: 0 auto;
-                /* this centers the entire page */
-            }
-
-            /* the area below is for all links on your page
-    EXCEPT for the navigation ED64F5*/
-            #container a {
-                color: #FF6700;
-                font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
-            }
-
-            #header {
-                width: 100%;
-                background-color: #1F7A8C;
-                /* header color here! 5e4e8c*/
-                height: 350px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
-            }
-
-            /* navigation section!! 13092D*/
-            #navbar {
-                height: 40px;
-                background-color: #0C2462;
-                /* navbar color */
-                width: 100%;
-            }
-
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
-            }
-
-            #navbar li {
-                padding-top: 10px;
-            }
-
-            /* navigation links*/
-            #navbar li a {
-                color: #FF6700;
-                /* navbar text color */
-                font-weight: 800;
-                text-decoration: none;
-                /* this removes the underline */
-            }
-
-            /* navigation link when a link is hovered over */
-            #navbar li a:hover {
-                color: #a49cba;
-                text-decoration: underline;
-            }
-
-            #flex {
-                display: flex;
-            }
-
-            /* this colors BOTH sidebars og color: 241445
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-            aside {
-                background-color: #2E2E7A;
-                width: 200px;
-                padding: 10px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
-            }
-
-
-            /* this is the color of the main content area,
-    between the sidebars! og color: 43256E */
-            main {
-                background-color: #242474;
-                flex: 1;
-                padding: 20px;
-                order: 2;
-            }
-
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
-
-            */ #leftSidebar {
-                order: 1;
-            }
-
-            #rightSidebar {
-                order: 3;
-            }
-
-            footer {
-                background-color: #053C5E;
-                /* background color for footer */
-                width: 100%;
-                height: 40px;
-                padding: 10px;
-                text-align: center;
-                /* this centers the footer text */
-            }
-
-            h1,
-            h2,
-            h3 {
-                color: #D8DAD3;
-            }
-/* h3 og ED64F5 */
-            h1 {
-                font-size: 25px;
-            }
-
-            strong {
-                /* this styles bold text */
-                color: #F1F2EB;
-            }
-/* og ED64F5 strong */
-            /* this is just a cool box, it's the darker colored one 053C5E*/
-            .box {
-                background-color: #080F4F;
-                border: 1px solid #000000;
-                padding: 10px;
-            }
-
-            /* CSS for extras 13092D*/
-
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #053C5E;
-            }
-
-
-            /* BELOW THIS POINT IS MEDIA QUERY */
-
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
-
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
-
-                aside {
-                    width: 100%;
-                }
-
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                main {
-                    order: 1;
-                }
-
-                #leftSidebar {
-                    order: 2;
-                }
-
-                #rightSidebar {
-                    order: 3;
-                }
-
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
-        </style>
-        <!-- below is for hit counter -->
-<script>
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var site_data = JSON.parse(this.responseText);
-      var num_arr = site_data.info.views.toString().split("");
-      var num_str = "";
-      for (i = 0; i < num_arr.length; i++) {
-        num_str += num_arr[i];
-        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
-      }
-      document.getElementById("hitcount").innerHTML = num_str;
-    }
-  };
-  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=kam106", true);
-  xhttp.send();
-</script>
-<script>
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var site_data = JSON.parse(this.responseText);
-
-      var date_str = site_data.info.last_updated;
-var date_obj = new Date(site_data.info.last_updated);
-document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
-
-    }
-  };
-  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=kam106", true);
-  xhttp.send();
-</script>
-<script>
-    // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
-                    
-const USERNAME = "RainbowxChaser"; // Put your LastFM username here
-const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
-
-const getTrack = async () => {
-const request = await fetch(BASE_URL);
-const json = await request.json();
-let status
-
-let isPlaying = json.track['@attr']?.nowplaying || false;
-
-if(!isPlaying) {
-    // Trigger if a song isn't playing
-    return;
-} else {
-    // Trigger if a song is playing
-}
-
-// Values:
-// COVER IMAGE: json.track.image[1]['#text']
-// TITLE: json.track.name
-// ARTIST: json.track.artist['#text']
-
-document.getElementById("listening").innerHTML = `
-<center>
-<div>
-    <img src="${json.track.image[1]['#text']}">
-</div>
-
-<div id="trackInfo">
-    <div class="track" id="trackName">${json.track.name}</div>
-    <div class="artist" id="artistName"><em>by</em> ${json.track.artist['#text']}</div>
-</div>
-</center>
-    `
-};
-
-getTrack();
-setInterval(() => { getTrack(); }, 10000);
-    </script>
-    <script>
-         
-function dateToText(date) {
-    var hours = date.getHours()
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
-    if (minutes < 10) minutes = '0'+minutes;
-    if (seconds < 10) seconds = '0'+seconds;
-    if (hours < 10) hours = '0'+hours;
-    return hours + ":" + minutes; // + ":" + seconds;
-}
-function updateClocks() {
-	for (var i = 0; i < window.arrClocks.length; i++) {
-		var clock = window.arrClocks[i];
-		var offset = window.arrOffsets[i];
-		clock.innerHTML = dateToText(new Date(new Date().getTime()+offset));
-	}
-}
-function startClocks() {
-	clockElements = document.getElementsByClassName('clock');
-	window.arrClocks = []
-	window.arrOffsets = [];
-	var j = 0;
-	for(var i = 0; i < clockElements.length; i++) {
-		el = clockElements[i];
-		timezone = parseInt(el.getAttribute('timezone'));
-		if (!isNaN(timezone)) {
-			var tzDifference = timezone * 60 + (new Date()).getTimezoneOffset();
-			var offset = tzDifference * 60 * 1000;
-			window.arrClocks.push(el);
-			window.arrOffsets.push(offset);
-		}
-	}
-	updateClocks();
-	clockID = setInterval(updateClocks, 1000);
-}
-setTimeout(startClocks, 100);
-    </script>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEARINA CSS template for Neocities</title>
+        <meta name="author" content="[your name here!]">
+        <meta name="description" content="[write about your site here!]">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        
+    <header>
+        <h1>SEARINA's website</h1>
+    </header>
+        
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#link1">Link 1</a></li>
+        <li><a href="#link2">Link 2</a></li>
+        <li><a href="#link3">Link 3</a></li>
+        </ul>
+    </nav>
+        
+    <div id="content">
+        
+    <div id="sidebar">
+        <div id="avatar">
+            <img src="images/icon.png" alt="my icon!">
+        </div>
+        
+        <div id="bio">
+            <p>hi, i'm SEARINA! living proof that you don't need a soul to make a website!</p>
+        </div>
+        
+        <ul>
+            <li><a href="#link4">Link 4</a></li>
+            <li><a href="#link5">Link 5</a></li>
+            <li><a href="#link6">Link 6</a></li>
+        </ul>
+    </div>   
+        
+    <main>
+        
+        <h1>welcome to my site!</h1>
+        <p>this is placeholder text!</p>
+        <p>write about yourself and what's on your website! you can say anything!! it's your website!!!! brag about your favorite things idk, just have fun hehe.</p>
+        <p>here's an <a href="https://nomnomnami.itch.io/kaima" target="_blank">example link</a>. (it goes to the game SEARINA is from!)</p>
+        
+        <h2>section 2</h2>
+        <div class="img-right">
+            <img src="images/searina.png" alt="it's SEARINA!">
+        </div>
+        <p>here's where you can put some other text. very exciting.</p>
+        <p>remember to replace the links with pages you want to show people!</p>
+        <h4>common pages people make:</h4>
+        <ul>
+        <li>about</li>
+        <li>blog</li>
+        <li>gallery</li>
+        <li>links in/out</li>
+        </ul>
+        <p>add whatever makes sense for your site~ link to all your things!!!</p>
+        <h2>credits</h2>
+        <p>template by <a href="https://nomnomnami.com">NomnomNami</a>!</p>
+        <p>i mostly learned css by playing with <a href="https://goblin-heart.net/sadgrl/projects/layout-builder/" target="_blank">sadgrl's layout builder</a> and looking up stuff i didn't know... you can learn too!!! good luck!!!!!!</p>
+        <small>last update: 9/15/2024</small>
+    </main>
+        
+    </div>
+        
+    <footer>© 2024 [your name here!]</footer>
+    </body>
+</html>
