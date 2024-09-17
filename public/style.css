@@ -1,7 +1,7 @@
 /* these are the main colors and header image
    replace them with anything you want! */
 :root {
-    --header-bg: url('images/header.png');
+    --header-bg: url('img/header.png');
     --accent-color: #FF3183;
     --link-color: #FF3183;
     --bg-color: #FFFFFF;
