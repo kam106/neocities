@@ -33,7 +33,6 @@ let authorLink = "https://kam106.neocities.org"; // Enter your website, social m
 let postsArray = [
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
 //[ "posts/2020-11-10-My-Third-Post-Example.html" ],
-//[ "posts/2024-09-13-The-Pandemic.html", encodeURI( 'Coping with the Pandemic' ) ],
 [ "posts/2024-09-12-Browsers-and-Other-Floorp.html", encodeURI( 'Browsers & Other Floorp: My History with Browsing' ) ],
 [ "posts/2024-09-08-Switching-to-Neocities.html", encodeURI( 'Switching to Neocities: The New Life' ) ],
 [ "posts/2024-09-07-Sky-Parody-Blog.html", encodeURI( 'Mystery Recipe to Try!!! From Undertale Yellow (Recipe and Review) (GOT ARRESTED)' ) ],
