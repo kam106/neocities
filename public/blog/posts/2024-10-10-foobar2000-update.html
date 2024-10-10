@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Post</title> <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">    
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">...</div>
+    <div id="content">
+      <h1 id="postTitleH1"></h1>
+      <h4 id="postDate"></h4>
+      <p>Woahhh, UI update!<br><br><img src="https://files.catbox.moe/m7rh2k.png" alt="Interface display; ouch, looks like catbox is down! Or your internet is garbage, maybe."></p><p>It has been a good few months since I last posted about this, and it has also been a good few months since LS has posted about it. Sounds like them and I both need to update on our music player preferences ... (nudge nudge)</p><p>Please excuse the "comment" button magically appearing, haha.</p><p>So, let's take a nice tour and see what changed! In my last post about it, I actually used JScript Panel 3 for my playlist switcher. In simpleton: Different look. However, the new playlist manager I wanted to switch to used Spider Monkey Panel as a basis. If you're unsure what that means: I was unable to stay on x64 and switched to x32! I talked about this a bit more in detail on <a href="https://kam106.neocities.org/blog/posts/2024-08-26-The-Switch-From-Spotify.html" target="_self">my blog</a>, but basically, I had to, plugins only support the version they're made for, so either it's x64 or x32.</p><p>However, I recently became aware of JSplitter, which is based on SMP and has a x64 build! Not only that, but the playlist switcher I wanted to install happened to recently add support for JSplitter! So that got to work out grand, and I got to switch to x64 for no reason. I gave up a few things, but I'm fine with that.</p><p>I also moved the rating panel to the toolbar! So now from the comfort of my own topbar, I can rate the song I'm listening to. How generous!<br></p><p>If you are also unaware, JSplitter allows you to do cool things like this when you aren't using it as a Spider Monkey Panel x64 build:<br><br><img src="https://files.catbox.moe/xzirdn.png" alt="Ouch."></p><p>Yeah, JSplitter is neat, it was worth going back to x64 for. It's capabilities are neat, so I went back. And well, it serves what I want it for.</p><p>Not to say I haven't also been experimenting in other ways though! JSplitter comes with this alternative playlist view script, which I've been playing with for the past hour:<br><br><img src="https://files.catbox.moe/mzlrg9.png" alt="Ouch."></p><p class="">Neat.</p><p class="">I've also been playing with ReFacets which is kind of like the Media Library feature from WinAmp, if you remember using that. It's like a breakdown of all the music you have by size, song count, etc, and you can send it to a playlist, or you can also just use it to find things on your playlist. Here's that:<br><br><img src="https://files.catbox.moe/2d55kv.png" alt="Ouch."></p><p class="">That is about it for the UI update. I did do a version of this where it's all floating, but I didn't like that one very much, so I moved to how I do it normally. As you can tell on the toolbar, I added a filter button, which just opens ReFacets. I may remove it now that Facets is on my UI, lol.</p><p class="">That concludes today's update!<br></p>
+    <div id="nextprev"></div>
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->
+  <!-- Here's the link to our JavaScript! -->
+  <script src="../script.js"></script>
+  </body>
+</html>
