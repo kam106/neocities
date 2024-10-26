@@ -32,7 +32,7 @@ let authorLink = "https://kam106.neocities.org"; // Enter your website, social m
 let postsArray = [
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
 //[ "posts/2020-11-10-My-Third-Post-Example.html" ],
-[ "2024-10-25-The-Haunt-Rant.html", encodeURI( 'The Haunt: More Tired Than Scared' ) ],
+[ "posts/2024-10-25-The-Haunt-Rant.html", encodeURI( 'The Haunt: More Tired Than Scared' ) ],
 [ "posts/2024-10-10-foobar2000-update.html", encodeURI( 'An Update On My foobar2000 UI!' ) ],
 [ "posts/2024-10-06-A-Windows-Rant.html", encodeURI( 'Incompetence in Compensation: A Windows Rant' ) ],
 [ "posts/2024-09-12-Browsers-and-Other-Floorp.html", encodeURI( 'Browsers & Other Floorp: My History with Browsing' ) ],
