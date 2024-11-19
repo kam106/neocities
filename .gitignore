@@ -1,7 +1,0 @@
-# api keys
-.env
-
-# maybe don't push the workflow file either
-/.github
-neocities.yml
-/.git
